@@ -38,6 +38,8 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		84C822AC2082041300FD26B7 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C82286208203E800FD26B7 /* FLAnimatedImage.framework */; };
+		84C822AF2082057800FD26B7 /* RNFLAnimatedImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C822AE2082057800FD26B7 /* RNFLAnimatedImageManager.m */; };
+		84C822B32082064700FD26B7 /* RNFLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C822B22082064700FD26B7 /* RNFLAnimatedImage.m */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -351,6 +353,10 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		84C82281208203E800FD26B7 /* FLAnimatedImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLAnimatedImage.xcodeproj; path = FLAnimatedImage/FLAnimatedImage.xcodeproj; sourceTree = "<group>"; };
+		84C822AE2082057800FD26B7 /* RNFLAnimatedImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFLAnimatedImageManager.m; sourceTree = "<group>"; };
+		84C822B02082058500FD26B7 /* RNFLAnimatedImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNFLAnimatedImageManager.h; sourceTree = "<group>"; };
+		84C822B12082063900FD26B7 /* RNFLAnimatedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNFLAnimatedImage.h; sourceTree = "<group>"; };
+		84C822B22082064700FD26B7 /* RNFLAnimatedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFLAnimatedImage.m; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -492,6 +498,7 @@
 		13B07FAE1A68108700A75B9A /* RNNative */ = {
 			isa = PBXGroup;
 			children = (
+				84C822AD2082054D00FD26B7 /* FLAnimatedImageManager */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -612,6 +619,18 @@
 				84C82286208203E800FD26B7 /* FLAnimatedImage.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84C822AD2082054D00FD26B7 /* FLAnimatedImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				84C822B12082063900FD26B7 /* RNFLAnimatedImage.h */,
+				84C822B22082064700FD26B7 /* RNFLAnimatedImage.m */,
+				84C822B02082058500FD26B7 /* RNFLAnimatedImageManager.h */,
+				84C822AE2082057800FD26B7 /* RNFLAnimatedImageManager.m */,
+			);
+			name = FLAnimatedImageManager;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -1145,6 +1164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				84C822AF2082057800FD26B7 /* RNFLAnimatedImageManager.m in Sources */,
+				84C822B32082064700FD26B7 /* RNFLAnimatedImage.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
