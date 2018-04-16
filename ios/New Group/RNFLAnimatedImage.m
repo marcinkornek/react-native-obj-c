@@ -16,12 +16,9 @@
 
 #import "RNFLAnimatedImage.h"
 
-@implementation RNFLAnimatedImage : UIView  {
-  
-  RCTEventDispatcher *_eventDispatcher;
+@implementation RNFLAnimatedImage {
   FLAnimatedImage *_image;
   FLAnimatedImageView *_imageView;
-  
 }
 
 - (instancetype)initView
