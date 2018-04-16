@@ -8,7 +8,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <FLAnimatedImage
           style={styles.gif}
-          src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif"
+          src="https://media2.giphy.com/media/10j1sRnpiklXB6/giphy.gif"
           resizeMode='contain'
         />
       </View>
