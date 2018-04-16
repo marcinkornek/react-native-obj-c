@@ -14,7 +14,8 @@
 
 @interface RNFLAnimatedImage : UIView
 
-@property (nonatomic, assign) NSString *src;
+@property (nonatomic, copy) NSString *src;
+@property (nonatomic, assign) NSNumber *contentMode;
 
 - (instancetype)initView;
 

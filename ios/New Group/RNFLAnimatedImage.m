@@ -42,6 +42,7 @@
 {
   _image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_src]]];
   if (_image) {
+    _imageView.contentMode = [_contentMode integerValue];
     _imageView.animatedImage = _image;
   }
 }
@@ -56,6 +57,14 @@
 {
   if (![src isEqual:_src]) {
     _src = [src copy];
+    [self reloadImage];
+  }
+}
+
+- (void)setContentMode:(NSNumber *)contentMode
+{
+  if(![contentMode isEqual:_contentMode]) {
+    _contentMode = contentMode;
     [self reloadImage];
   }
 }

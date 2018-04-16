@@ -9,6 +9,7 @@ export default class App extends Component {
         <FLAnimatedImage
           style={styles.gif}
           src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif"
+          resizeMode='contain'
         />
       </View>
     )
@@ -24,6 +25,6 @@ const styles = StyleSheet.create({
   },
   gif: {
     width: 200,
-    height: 200,
+    height: 500,
   },
 });

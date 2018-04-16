@@ -34,5 +34,15 @@ RCT_EXPORT_MODULE();
 }
 
 RCT_EXPORT_VIEW_PROPERTY(src, NSString);
+RCT_EXPORT_VIEW_PROPERTY(contentMode, NSNumber);
+
+
+- (NSDictionary *) constantsToExport {
+  return @{
+           @"ScaleAspectFit": @(UIViewContentModeScaleAspectFit),
+           @"ScaleAspectFill": @(UIViewContentModeScaleAspectFill),
+           @"ScaleToFill": @(UIViewContentModeScaleToFill)
+           };
+}
 
 @end
